@@ -1,0 +1,21 @@
+
+.img-container{
+    margin:24px;
+    box-shadow:#555 1px 2px 8px 1px;
+    min-height: 560px;
+    min-width: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+}
+
+.center-row{
+  font-size: 1.5em;
+  font-family: "Montserrat", sans-serif;
+  color: #222;
+  background-color: #f5f5f5;
+  max-width: 700px;
+  display: inline;
+  text-align: center;
+}
+

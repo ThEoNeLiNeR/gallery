@@ -1,0 +1,8 @@
+<div class="bottom">
+    <form [formGroup]="myForm" (ngSubmit)="submit()">
+        <input formControlName="title" type="text" id="file" class="form-control" (change)="onTitleChange($event)" placeholder="title">
+        <input formControlName="description" type="text" id="file" class="form-control" (change)="onDescriptionChange($event)" placeholder="description">
+        <input formControlName="file" accept="image/*" type="file" id="file" class="form-control" enctype="multipart/form-data" (change)="onFileChange($event)" multiple>
+        <input type="submit" value="Submit" class="btn btn-primary">
+      </form>
+</div>

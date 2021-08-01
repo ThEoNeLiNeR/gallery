@@ -1,0 +1,21 @@
+<div class="row">
+  <div class=col-md-12>
+    <div [ngStyle]="{'background-image':'url('+ imageIMG +')'}" class="img-container paper">
+    </div>
+  </div>
+</div>
+<div class="center-row">
+    <div class="title">
+        <b>Title</b> : {{title}}
+    </div>
+    <div class="description">
+      <b>Description</b> : {{description}}
+  </div>
+  <br>
+  <div class="deleteButton">
+    <button type="submit" class="btn btn-primary" (click)="onDelete()">Delete</button>
+    <a [href]="imageIMG" download="title.png">
+      <button type="submit">Download</button>
+    </a>
+  </div>
+</div>

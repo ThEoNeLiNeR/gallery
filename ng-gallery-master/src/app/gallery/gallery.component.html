@@ -1,0 +1,17 @@
+<div class="row">
+    <h2>Travel Photos</h2>
+    <!-- <button class="btn btn-lg btn-info" [class.active]="filterBy==='all'" (click)="filterBy='all'">All</button>
+    <button class="btn btn-lg btn-info" [class.active]="filterBy==='boats'" (click)="filterBy='boats'">Boats</button>
+    <button class="btn btn-lg btn-info" [class.active]="filterBy==='camping'" (click)="filterBy='camping'">Camping</button>
+    <button class="btn btn-lg btn-info" [class.active]="filterBy==='library'" (click)="filterBy='library'">Library</button> -->
+    <ul id="thumbnailsList">
+        <li *ngFor="let image of visibleImages" >
+            <a [routerLink] ="['/image', image.img]">
+                <!-- <p>haha</p> -->
+                <img src="http://localhost:3000/{{image.img}}/image" class="tn" width="200" height="160">
+            </a>
+        </li>
+    </ul>
+</div>
+
+<app-image></app-image>
